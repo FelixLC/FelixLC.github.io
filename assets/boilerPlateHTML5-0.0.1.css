@@ -4820,6 +4820,8 @@ fieldset[disabled] .btn-primary-outline.active {
   .section {
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 /* ---------------- HEADER ---------------- */
@@ -4932,6 +4934,12 @@ fieldset[disabled] .btn-primary-outline.active {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+@media (max-width: 768px) {
+  .getstarted {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
 .propval {
   text-align: center;
   padding: 10px 0px 5px 0px;
@@ -5010,16 +5018,28 @@ fieldset[disabled] .btn-primary-outline.active {
   margin-bottom: 60px;
 }
 #recharge .half {
+  padding-right: 20px;
   width: 50%;
   float: left;
+}
+@media (max-width: 768px) {
+  #recharge .half {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 #recharge .half-left {
   padding-right: 60px;
   padding-top: 60px;
 }
+@media (max-width: 768px) {
+  #recharge .half-left {
+    padding-right: 0;
+  }
+}
 #recharge .svg-container svg {
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
 }
 /* ---------------- VINIBAR-FEATURE ---------------- */
 .vinibar-bandeau {
