@@ -4849,16 +4849,6 @@ body {
 .headline .tagline {
   text-transform: uppercase;
 }
-.headline-xs {
-  padding: 10px 0px 10px;
-  margin-bottom: 10px;
-}
-.tagline-xs {
-  color: #fff;
-  margin: 5px;
-  text-align: center;
-  padding-bottom: 20px;
-}
 .scrollable {
   display: inline-block;
   height: 38.5px;
