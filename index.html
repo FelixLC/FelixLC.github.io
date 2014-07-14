@@ -119,7 +119,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-             <a href="#splashscreen"><img alt="" src="assets/img/LogoVinify.svg" style="height:45px" id="mf2"/></a>
+             <a href="#splashscreen"><img alt="" src="assets/logos/LogoVinifyco.png" style="height:45px" id="mf2"/></a>
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -407,7 +407,6 @@
 
       <div class="section" id="selections">
         <div class="container">
-            <div class="">
                <div class="col-lg-5 col-md-5 cell">
                   <img class="img img-responsive wobble-vertical" src="assets/img/jean_michael_deluxe.png" id="img-contact">
               </div>
@@ -423,7 +422,6 @@
                     <p> En suite, en fonction de vos notes et du résultat de notre algorithme de sélection, il est capable de prédire les bouteilles que vous allez aimer !
                     <p>
                </div>
-            </div>
         </div><!-- /.container -->
       </div><!-- /.section -->
       <!-- /selections -->
@@ -602,8 +600,7 @@
           <p>
             Copyright &copy; Vinify 2014 &middot; L'abus d'alcool est dangereux pour la santé, à consommer avec modération.
           </p>
-        </footer>
-        <!-- /END OF FOOTER -->
+        </footer><!-- /END OF FOOTER -->
     </div><!-- /container -->
   </div>
 </div><!-- /CONTENT -->
@@ -619,14 +616,14 @@
   <script type="text/javascript" src="vendor/jQuery-Flex-Vertical-Center.js"></script>
 
 <!-- vertical Center -->
-<script>
-  $('.headline').flexVerticalCenter({ cssAttribute: 'padding-top', parentSelector: '.header-image', verticalOffset: '-50px' });
-  $('#selection-text').flexVerticalCenter({ cssAttribute: 'padding-top', parentSelector: '.row'});
+<script type="text/javascript">
+  $('.headline').flexVerticalCenter({});
+  $('#selection-text').flexVerticalCenter({ cssAttribute: 'padding-top', parentSelector: '.container'});
   $('.quick-links').flexVerticalCenter({ cssAttribute: 'padding-top', parentSelector: '.navbar-splash'});
 </script>
 
 <!-- smoothscroll -->
-<script>
+<script type="text/javascript">
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -644,7 +641,7 @@
 </script>
 
 <!-- slider -->
-<script>
+<script type="text/javascript">
   (function() {
       $(function() {
         return $('.slider').slider();
@@ -654,7 +651,7 @@
 </script>
 
 <!-- fixnavbar -->
-<script>
+<script type="text/javascript">
   $(document).ready(function () {
 
       var menu = $('#navbar-second');
