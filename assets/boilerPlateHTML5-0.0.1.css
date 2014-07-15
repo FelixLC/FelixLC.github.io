@@ -5102,42 +5102,42 @@ body {
 }
 @-webkit-keyframes scroll {
   0% {
-    margin-top: 5px;
+    margin-top: 1px;
   }
   19% {
-    margin-top: 5px;
+    margin-top: 1px;
   }
   25% {
-    margin-top: -39.5px;
+    margin-top: -43.5px;
   }
   69% {
-    margin-top: -39.5px;
+    margin-top: -43.5px;
   }
   75% {
-    margin-top: -84px;
+    margin-top: -88px;
   }
   100% {
-    margin-top: -84px;
+    margin-top: -88px;
   }
 }
 @-moz-keyframes scroll {
   0% {
-    margin-top: 4px;
+    margin-top: 2px;
   }
   19% {
-    margin-top: 4px;
+    margin-top: 2px;
   }
   25% {
-    margin-top: -40.5px;
+    margin-top: -42.5px;
   }
   69% {
-    margin-top: -40.5px;
+    margin-top: -42.5px;
   }
   75% {
-    margin-top: -85px;
+    margin-top: -87px;
   }
   100% {
-    margin-top: -85px;
+    margin-top: -87px;
   }
 }
 @-ms-keyframes scroll {
