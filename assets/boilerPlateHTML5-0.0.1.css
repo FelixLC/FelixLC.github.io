@@ -83,8 +83,6 @@
     background: transparent none; }
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:800,400,300|Montserrat:700,400);
-@import url(http://fonts.googleapis.com/css?family=Actor);
-@import url(http://fonts.googleapis.com/css?family=Amaranth:400,700);
 /**
  * This is the main application stylesheet. It should include or import all
  * stylesheets used throughout the application as this is the only stylesheet in
@@ -4828,6 +4826,27 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /**
  * Typography
  */
+@font-face {
+  font-family: 'amaranthbold';
+  src: url('fonts/amaranth-bold-webfont.eot');
+  src: url('fonts/amaranth-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/amaranth-bold-webfont.woff') format('woff'), url('fonts/amaranth-bold-webfont.ttf') format('truetype'), url('fonts/amaranth-bold-webfont.svg#amaranthregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'amaranthregular';
+  src: url('fonts/amaranth-regular-webfont.eot');
+  src: url('fonts/amaranth-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/amaranth-regular-webfont.woff') format('woff'), url('fonts/amaranth-regular-webfont.ttf') format('truetype'), url('fonts/amaranth-regular-webfont.svg#amaranthregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'actorregular';
+  src: url('fonts/actor-regular-webfont.eot');
+  src: url('fonts/actor-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/actor-regular-webfont.woff') format('woff'), url('fonts/actor-regular-webfont.ttf') format('truetype'), url('fonts/actor-regular-webfont.svg#actorregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 html,
 body {
   font-size: 16px;
@@ -4845,13 +4864,13 @@ body {
   }
 }
 body {
-  font-family: 'Actor', 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'actorregular', 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 h1,
 h2,
 h3 {
-  font-family: 'Amaranth', Helvetica, Arial, sans-serif;
+  font-family: 'amaranthregular', Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
 .title {
@@ -4861,7 +4880,7 @@ h3 {
   font-size: 1.2em;
   color: #006db2;
   font-weight: 400;
-  font-family: 'Amaranth';
+  font-family: 'amaranthregular';
 }
 .strong {
   font-weight: 400;
@@ -4872,7 +4891,7 @@ body {
 }
 .btn-primary {
   color: #ffffff;
-  font-family: 'Amaranth', Helvetica, Arial, sans-serif;
+  font-family: 'amaranthregular', Helvetica, Arial, sans-serif;
   border-color: #006db2;
   background-color: #006db2;
   border-radius: 50px;
@@ -4887,7 +4906,7 @@ body {
   border-color: #006db2;
 }
 .btn-primary-outline {
-  font-family: 'Amaranth', Helvetica, Arial, sans-serif;
+  font-family: 'amaranthregular', Helvetica, Arial, sans-serif;
   border-radius: 50px;
   background-color: transparent;
 }
@@ -4908,7 +4927,7 @@ body {
   color: #FFFFFF;
 }
 .landing-btn-strong {
-  font-family: 'Amaranth', Helvetica, Arial, sans-serif;
+  font-family: 'amaranthregular', Helvetica, Arial, sans-serif;
   color: #ffffff;
   background-color: #006db2;
   border-color: #006db2;
@@ -5014,7 +5033,7 @@ body {
   }
 }
 .headline h2 {
-  font-family: 'Amaranth', Helvetica, Arial, sans-serif;
+  font-family: 'amaranthregular', Helvetica, Arial, sans-serif;
   color: #ffffff;
   font-size: 35px;
   font-weight: 400;
@@ -5024,7 +5043,7 @@ body {
   text-transform: uppercase;
 }
 .headline h3 {
-  font-family: 'Actor', Helvetica, Arial, sans-serif;
+  font-family: 'actorregular', Helvetica, Arial, sans-serif;
   color: #ffffff;
   font-size: 25px;
   font-weight: 400;
@@ -5033,7 +5052,7 @@ body {
   line-height: 1.25em;
 }
 .headline .landing-btn-strong {
-  font-family: 'Amaranth', Helvetica, Arial, sans-serif;
+  font-family: 'amaranthregular', Helvetica, Arial, sans-serif;
   color: #ffffff;
   background-color: #006db2;
   border-color: #006db2;
@@ -5248,7 +5267,7 @@ body {
   padding: 10px;
 }
 #whatdoiget p {
-  font-family: 'Amaranth', Helvetica, Arial, sans-serif;
+  font-family: 'amaranthregular', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
 }
@@ -5524,7 +5543,7 @@ body {
 .vinibar-bandeau p {
   font-size: 24px;
   color: #FFF;
-  font-family: 'Amaranth', Helvetica, Arial, sans-serif;
+  font-family: 'amaranthregular', Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
 #vinibar-feature {
@@ -5644,20 +5663,6 @@ footer {
   }
   .section {
     padding: 0px;
-  }
-  .commentcamarche h2 {
-    text-align: center;
-    font-size: 17px;
-  }
-  #main,
-  #selection,
-  #contact > p {
-    text-align: center;
-    font-size: 16px;
-  }
-  .commentcamarchefin h2 {
-    text-align: center;
-    font-size: 17px;
   }
   #selection {
     margin-top: 30px;
