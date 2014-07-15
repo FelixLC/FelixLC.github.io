@@ -38,7 +38,7 @@
             </div>
 
             <div class="quick-links">
-              <a href="http://app.vinify.co" class="btn btn-primary-outline btn-outline-white" id="">
+              <a href="http://app.vinify.co/static/index.html#/wines" class="btn btn-primary-outline btn-outline-white" id="">
                   <i class="fa fa-user"></i>  Login
               </a>
             </div>
@@ -62,6 +62,7 @@
               </div>
               <div class="cta">
                   <div class="col-lg-12 col-md-12 col-sm-12">
+                  <!-- LINK TBD -->
                     <a href="http://eepurl.com/Mgtcb" class="grow btn btn-primary landing-btn-strong">
                      <!--  <i class="fa fa-shopping-cart"></i> --> Démarrer l'aventure
                     </a>
@@ -145,13 +146,16 @@
                         <li><a href="#">Recevoir</a></li>
                       </ul>
                 </li>
-                <li>
-                  <a href="http://app.vinify.co" class="btn-navbar-second">
+                <li> -->
+                <li class="tooltip-enabled" data-toggle="tooltip" data-placement="bottom" title="prochainement">
+                <!-- LINK TBD -->
+                  <a href="" class="btn-navbar-second">
                       Offre Découverte
                   </a>
-                </li> -->
+                </li>
                 <li>
-                  <a href="http://app.vinify.co" class="btn-navbar-second btn-primary">
+                <li>
+                  <a href="http://app.vinify.co/static/commande/commande.html#/questionnaire/coffee?product=v" class="btn-navbar-second btn-primary">
                      Démarrer l'aventure
                   </a>
                 </li>
@@ -539,7 +543,7 @@
 
     <div class="vinibar-bandeau hidden-xs" id="footer-image">
         <div class="vertical-align">
-          <a href="http://vinify.co/waitlist.html">
+          <a href="http://app.vinify.co/static/commande/commande.html#/questionnaire/coffee?product=v">
             <button class="grow btn btn-primary landing-btn-strong">Démarrer l'aventure</button>
           </a>
         </div>
@@ -610,8 +614,9 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <!-- compiled JavaScript -->
   <script type="text/javascript" src="vendor/bootstrap/js/dropdown.js"></script>
-  <script type="text/javascript" src="vendor/bootstrap/js/carousel.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap/js/transition.js"></script>
   <script type="text/javascript" src="vendor/bootstrap/js/collapse.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap/js/tooltip.js"></script>
   <script type="text/javascript" src="vendor/sliders/js/plugin.js"></script>
   <script type="text/javascript" src="vendor/jQuery-Flex-Vertical-Center.js"></script>
 
@@ -620,6 +625,11 @@
   $('.headline').flexVerticalCenter({});
   $('#selection-text').flexVerticalCenter({ cssAttribute: 'padding-top', parentSelector: '.container'});
   $('.quick-links').flexVerticalCenter({ cssAttribute: 'padding-top', parentSelector: '.navbar-splash'});
+</script>
+
+<!-- tooltip -->
+<script type="text/javascript">
+    $('.tooltip-enabled').tooltip();
 </script>
 
 <!-- smoothscroll -->

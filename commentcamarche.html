@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Vinify | des vins de qualité, adaptés à vos goûts, toujours à portée de main</title>
+        <title>Vinify | Recevoir du vin adapté à ses goûts</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <!-- social media tags -->
 
@@ -48,13 +48,13 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                  <a href="#exp-vinib" class="btn-navbar-second">
+                  <a href="experience.html" class="btn-navbar-second">
                       L'expérience Vinibar
                   </a>
                 </li>
 
                 <li>
-                  <a href="http://app.vinify.co" class="btn-navbar-second">
+                  <a href="#" class="btn-navbar-second">
                       Comment ça marche&nbsp;?
                   </a>
                 </li>
@@ -68,13 +68,15 @@
                         <li><a href="#">Recevoir</a></li>
                       </ul>
                 </li>
-                <li>
-                  <a href="http://app.vinify.co" class="btn-navbar-second">
+                <li> -->
+                <li class="tooltip-enabled" data-toggle="tooltip" data-placement="bottom" title="prochainement">
+                <!-- LINK TBD -->
+                  <a href="" class="btn-navbar-second">
                       Offre Découverte
                   </a>
-                </li> -->
+                </li>
                 <li>
-                  <a href="http://app.vinify.co" class="btn-navbar-second btn-primary">
+                  <a href="http://app.vinify.co/static/commande/commande.html#/questionnaire/coffee" class="btn-navbar-second btn-primary">
                      Démarrer l'aventure
                   </a>
                 </li>
@@ -92,23 +94,22 @@
                <div class="col-lg-7 col-md-7 pull-left">
                 <h2 class="featurette-heading">Le Vinibar</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur reiciendis magnam obcaecati exercitationem culpa vel laboriosam iusto quam, incidunt! Quia perferendis voluptates vero ut veritatis hic aspernatur qui beatae.
+                  En alliant consommation spontanée et recommandation, le Vinibar permet de disposer de la bonne bouteille pour la bonne occasion, toujours à portée de main. Sans engagement, le Vinibar s’adapte à tous les budgets et à tous les rythmes de consommation.
                 </p>
                 <p class="know-cta-paragraph">
-                  <a class="know-more-link" href="">En savoir plus</a>
-                  <a class="btn btn-primary" href="">Démarrer le questionnaire</a>
+                  <a class="btn btn-primary-outline btn-outline-blue" href="http://app.vinify.co/static/commande/commande.html#/questionnaire/coffee?product=v">Démarrer le questionnaire</a>
                 </p>
                 <h2 class="featurette-heading">L'Offre découverte</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur reiciendis magnam obcaecati exercitationem culpa vel laboriosam iusto quam, incidunt! Quia perferendis voluptates vero ut veritatis hic aspernatur qui beatae.
+                  3 bouteilles choisies pour moi, en fonction de mes réponses au questionnaire pour découvrir la gamme Vinify.
                 </p>
                 <p class="know-cta-paragraph">
-                  <a class="know-more-link" href="">En savoir plus</a>
-                  <a class="btn btn-primary" href="">Démarrer le questionnaire</a>
+                  <!-- LINK TBD -->
+                  <a  data-toggle="tooltip" data-placement="bottom" title="prochainement" class="btn btn-primary-outline btn-outline-blue">Découvrir Vinify</a>
                 </p>
                </div>
-               <div class="col-lg-4 col-md-4 cell pull-right">
-                  <img class="img img-responsive pull-right hidden-xs hidden-sm dessins" src="assets/img/vinify-tailleur.png" id="img-contact">
+               <div class="col-lg-4 col-md-4 pull-right hidden-xs hidden-sm" id="vinify-tailleur">
+                  <img class="img img-responsive pull-right dessins" src="assets/img/vinify-tailleur.png" id="img-contact">
               </div>
             </div>
 
@@ -205,6 +206,13 @@
                   <div class="acc-content">
                     <div class="acc-content-inner">
                       <p>Oui. <a href="http://stripe.com">Stripe</a>, notre partenaire de paiement leader en Europe et aux Etats-Unis est totalement sécurisé. Nous ne conservons pas vos coordonnées bancaires.</p>
+                    </div>
+                  </div>
+
+                  <div class="acc-btn"><h1>Quels sont les différents moyens de paiement&nbsp;?</h1></div>
+                  <div class="acc-content">
+                    <div class="acc-content-inner">
+                      <p>Le paiement s'effectue par carte bancaire, à chaque commande. Merci de contacter <a href="mailto:charlotte@vinify.co">Charlotte</a> pour tout renseignement complémentaire.</p>
                     </div>
                   </div>
 
@@ -355,11 +363,22 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <!-- compiled JavaScript -->
   <script type="text/javascript" src="vendor/bootstrap/js/dropdown.js"></script>
-  <script type="text/javascript" src="vendor/bootstrap/js/collapse.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap/js/tooltip.js"></script>
   <script type="text/javascript" src="vendor/bootstrap/js/transition.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap/js/collapse.js"></script>
   <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="vendor/jQuery-Flex-Vertical-Center.js"></script>
 
+<!-- VERTICAL CENTER -->
+<script type="text/javascript">
+  $('#vinify-tailleur').flexVerticalCenter({parentSelector: '#products'});
+</script>
+
+<!-- tooltip -->
+<script type="text/javascript">
+    $('.tooltip-enabled').tooltip();
+</script>
 
   <!-- SMOOTH SCROLLING -->
   <script>
