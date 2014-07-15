@@ -4697,6 +4697,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .right-padded-text {
   padding-right: 50px;
 }
+@media (max-width: 768px) {
+  .right-padded-text {
+    padding-right: 0;
+  }
+}
 .background-colored-text {
   background-color: rgba(0, 0, 0, 0.4);
 }
