@@ -5111,6 +5111,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /* iPads (landscape) ----------- */
 }
 @media (min-width: 768px) {
   .header-image {
@@ -5121,6 +5122,15 @@ body {
 @media (max-width: 768px) {
   .header-image {
     background: url(img/background-small.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .header-image {
+    background: url(img/background-vinibar.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
