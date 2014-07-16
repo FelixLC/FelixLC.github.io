@@ -25,6 +25,11 @@
         <link rel="stylesheet" type="text/css" href="vendor/sliders/css/styles.css" />
         <link rel="stylesheet" type="text/css" href="assets/boilerPlateHTML5-0.0.1.css" />
 
+        <!-- start Mixpanel -->
+            <script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+                  for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+                  mixpanel.init("f6bd53dd567cdbc693bebdc18e1a4995");</script>
+            <!-- end Mixpanel -->
 </head>
 
 <body>
@@ -34,11 +39,11 @@
       <div class="container-fluid">
           <div class="navbar-splash clearfix">
             <div class="brand-image">
-               <a href="#top"><img alt="" src="assets/img/LogoVinifyCo.png" style="height:45px" id="mf2"/></a>
+               <a id="home-logo-brand" href="#top"><img alt="" src="assets/img/LogoVinifyCo.png" style="height:45px" id="mf2"/></a>
             </div>
 
             <div class="quick-links">
-              <a href="http://app.vinify.co/static/index.html#/wines" class="btn btn-primary-outline btn-outline-white" id="">
+              <a id="home-login" href="http://app.vinify.co/static/index.html#/wines" class="btn btn-primary-outline btn-outline-white">
                   <i class="fa fa-user"></i>  Login
               </a>
             </div>
@@ -63,7 +68,7 @@
               <div class="cta">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                   <!-- LINK TBD -->
-                    <a href="http://eepurl.com/Mgtcb" class="grow btn btn-primary landing-btn-strong">
+                    <a id="home-start" href="http://eepurl.com/Mgtcb" class="grow btn btn-primary landing-btn-strong">
                      <!--  <i class="fa fa-shopping-cart"></i> --> Démarrer l'aventure
                     </a>
                   </div>
@@ -73,7 +78,7 @@
     </div>
 
     <span class=" hidden-xs know-more">
-      <a href="#navbar-second">
+      <a id="home-chevron-down" href="#navbar-second">
         <i class="wobble-vertical fa fa-chevron-down"></i>
       </a>
     </span>
@@ -101,7 +106,7 @@
                       <a href="http://vinify.co/inscription.html" class="btn mini-loginbtn"> <i class="fa fa-shopping-cart"></i> Je commande </a>
                   </div>
                   <div class="miniloginbutton">
-                      <a href="http://app.vinify.co" class="btn mini-loginbtn" id=""><i class="fa fa-user"></i>  Login</a>
+                      <a href="http://app.vinify.co" class="btn mini-loginbtn" ><i class="fa fa-user"></i>  Login</a>
                   </div>
                 </div>
               </div>
@@ -120,19 +125,19 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-             <a href="#splashscreen"><img alt="" src="assets/logos/LogoVinifyco.png" style="height:45px" id="mf2"/></a>
+             <a href="#splashscreen" id="home-logo-brand-second"><img alt="" src="assets/logos/LogoVinifyco.png" style="height:45px" id="mf2"/></a>
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                  <a href="experience.html" class="btn-navbar-second">
+                  <a href="experience.html" id="home-navbar-second-experience" class="btn-navbar-second">
                       L'expérience Vinibar
                   </a>
                 </li>
 
                 <li>
-                  <a href="commentcamarche.html" class="btn-navbar-second">
+                  <a href="commentcamarche.html" id="home-navbar-second-faq" class="btn-navbar-second">
                       Comment ça marche ?
                   </a>
                 </li>
@@ -147,15 +152,15 @@
                       </ul>
                 </li>
                 <li> -->
-                <li class="tooltip-enabled" data-toggle="tooltip" data-placement="bottom" title="prochainement">
+                <li class="disabled tooltip-enabled" data-toggle="tooltip" data-placement="bottom" title="prochainement">
                 <!-- LINK TBD -->
-                  <a href="" class="btn-navbar-second">
+                  <a href="" class="btn-navbar-second" id="home-navbar-second-discover">
                       Offre Découverte
                   </a>
                 </li>
                 <li>
                 <li>
-                  <a href="http://app.vinify.co/static/commande/commande.html#/questionnaire/coffee?product=v" class="btn-navbar-second btn-primary">
+                  <a href="http://app.vinify.co/static/commande/commande.html#/questionnaire/coffee?product=v" id="home-navbar-second-start" class="btn-navbar-second btn-primary">
                      Démarrer l'aventure
                   </a>
                 </li>
@@ -538,7 +543,7 @@
                       c-35.58,0-64.527-28.947-64.527-64.527c0-35.584,28.947-64.531,64.527-64.531c35.582,0,64.529,28.947,64.529,64.531
                       C164.079,134.796,135.132,163.743,99.55,163.743z"/>
                   </g>
-                  <text transform="matrix(1 0 0 1 65.2705 88.1865)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'amaranthbold'" font-size="30">-15%</tspan><tspan x="-22.646" y="22.8" fill="#FFFFFF" font-family="'amaranthbold'" font-size="19">SUR LES VINS</tspan><tspan x="-18.788" y="43.2" fill="#FFFFFF" font-family="'Amaranth-Bold'" font-size="17">QUE J’AI AIMÉ</tspan></text>
+                  <text transform="matrix(1 0 0 1 65.2705 88.1865)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'amaranthbold'" font-size="30">-15%</tspan><tspan x="-22.646" y="22.8" fill="#FFFFFF" font-family="'amaranthbold'" font-size="19">SUR LES VINS</tspan><tspan x="-18.788" y="43.2" fill="#FFFFFF" font-family="'amaranthbold'" font-size="17">QUE J’AI AIMÉ</tspan></text>
                 </g>
                 </svg>
               </div>
@@ -552,7 +557,7 @@
 
     <div class="vinibar-bandeau hidden-xs" id="footer-image">
         <div class="vertical-align">
-          <a href="http://app.vinify.co/static/commande/commande.html#/questionnaire/coffee?product=v">
+          <a href="http://app.vinify.co/static/commande/commande.html#/questionnaire/coffee?product=v" id="home-end-start">
             <button class="grow btn btn-primary landing-btn-strong">Démarrer l'aventure</button>
           </a>
         </div>
@@ -582,18 +587,18 @@
               </div>
               <div class="">
               <div class="col-lg-2 col-lg-offset-3 col-md-2 col-md-offset-3 socbuttons">
-                <a href="http://facebook.com/vinify.co" class="float" target="_blank"><img alt="" src="assets/img/fb-icon.png"></a>
-                <h3>Facebook</h3><a href="http://facebook.com/vinify.co" "_blank">vinify</a>
+                <a href="http://facebook.com/vinify.co" class="float" target="_blank" id="home-social-facebook"><img alt="" src="assets/img/fb-icon.png"></a>
+                <h3>Facebook</h3><a href="http://facebook.com/vinify.co">vinify</a>
               </div>
 
               <div class="col-lg-2 col-md-2 socbuttons">
-                <a href="http://twitter.com/vinifyco" class="float" target="_blank"><img alt="" src="assets/img/twitter-icon.png"></a>
-                <h3>Twitter</h3><a href="http://twitter.com/vinifyco" "_blank">@vinifyco</a>
+                <a href="http://twitter.com/vinifyco" class="float" target="_blank" id="home-social-twitter"><img alt="" src="assets/img/twitter-icon.png"></a>
+                <h3>Twitter</h3><a href="http://twitter.com/vinifyco">@vinifyco</a>
               </div>
 
               <div class="col-lg-2 col-md-2 socbuttons">
-                <a href="mailto:founders@vinify.co" class="float" target="_blank"><img alt="" src="assets/img/mail-icon.png"></a>
-                <h3>Mail</h3><a href="mailto:founders@vinify.co" "_blank">founders@vinify.co</a>
+                <a href="mailto:founders@vinify.co" class="float" target="_blank" id="home-social-mail"><img alt="" src="assets/img/mail-icon.png"></a>
+                <h3>Mail</h3><a href="mailto:founders@vinify.co">founders@vinify.co</a>
               </div>
             </div>
           </div><!-- /.row -->
@@ -667,6 +672,27 @@
       });
 
     }).call(this);
+</script>
+
+<!-- Mixpanel -->
+<script type="text/javascript">
+        mixpanel.track_links("#home-logo-brand", 'Clicked on home/logo-brand');
+        mixpanel.track_links("#home-login", 'Clicked on home/login');
+        mixpanel.track_links("#home-start", 'Clicked on home/start');
+        mixpanel.track_links("#home-chevron-down", 'Clicked on home/chevron-down');
+        mixpanel.track_links("#home-logo-brand-second", 'Clicked on home/logo-brand-second');
+        mixpanel.track_links("#home-navbar-second-experience", 'Clicked on home/navbar-second-experience');
+        mixpanel.track_links("#home-navbar-second-faq", 'Clicked on home/navbar-second-faq');
+        mixpanel.track_links("#home-navbar-second-discover", 'Clicked on home/navbar-second-discover');
+        mixpanel.track_links("#home-navbar-second-start", 'Clicked on home/navbar-second-start');
+        mixpanel.track_links("#home-end-start", 'Clicked on home/end-start');
+        mixpanel.track_links("#home-social-facebook", 'Clicked on home/social-facebook');
+        mixpanel.track_links("#home-social-twitter", 'Clicked on home/social-twitter');
+        mixpanel.track_links("#home-social-mail", 'Clicked on home/social-mail');
+        mixpanel.track('page viewed', {
+            'page name' : 'landing',
+            'url' : window.location.pathname
+        });
 </script>
 
 <!-- fixnavbar -->

@@ -607,7 +607,7 @@ dt {
 dd {
   margin-left: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -2975,12 +2975,12 @@ a.list-group-item.active > .badge,
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar {
     border-radius: 4px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar-header {
     float: left;
   }
@@ -2997,7 +2997,7 @@ a.list-group-item.active > .badge,
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -3026,7 +3026,7 @@ a.list-group-item.active > .badge,
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
@@ -3039,7 +3039,7 @@ a.list-group-item.active > .badge,
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar-static-top {
     border-radius: 0;
   }
@@ -3051,7 +3051,7 @@ a.list-group-item.active > .badge,
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
@@ -3077,7 +3077,7 @@ a.list-group-item.active > .badge,
 .navbar-brand:focus {
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -3107,7 +3107,7 @@ a.list-group-item.active > .badge,
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar-toggle {
     display: none;
   }
@@ -3120,7 +3120,7 @@ a.list-group-item.active > .badge,
   padding-bottom: 10px;
   line-height: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -3142,7 +3142,7 @@ a.list-group-item.active > .badge,
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -3158,7 +3158,7 @@ a.list-group-item.active > .badge,
     margin-right: -15px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar-left {
     float: left !important;
   }
@@ -3212,12 +3212,12 @@ a.list-group-item.active > .badge,
     top: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar-form {
     width: auto;
     border: 0;
@@ -3257,7 +3257,7 @@ a.list-group-item.active > .badge,
   margin-top: 15px;
   margin-bottom: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar-text {
     float: left;
     margin-left: 15px;
@@ -3322,7 +3322,7 @@ a.list-group-item.active > .badge,
   background-color: #283849;
   color: #555555;
 }
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777777;
   }
@@ -3405,7 +3405,7 @@ a.list-group-item.active > .badge,
   background-color: #080808;
   color: #ffffff;
 }
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #080808;
   }
@@ -4478,7 +4478,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   bottom: 100%;
   margin-bottom: 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar-right .dropdown-menu {
     left: auto;
     right: 0;
@@ -4877,9 +4877,10 @@ body {
   border-bottom-width: 1px;
   border-radius: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav > li > a {
     display: inline-block;
+    padding: 10px 5px;
   }
 }
 .navbar-toggle {
@@ -5034,9 +5035,9 @@ body {
 }
 .items {
   float: left;
-  -webkit-animation: scroll 8s infinite;
-  -moz-animation: scroll 8s infinite;
-  -ms-animation: scroll 8s infinite;
+  -webkit-animation: scroll 42, 1750s infinite;
+  -moz-animation: scroll 42, 1750s infinite;
+  -ms-animation: scroll 42, 1750s infinite;
   -webkit-animation-direction: alternate;
   /* Safari and Chrome */
   animation-direction: alternate;

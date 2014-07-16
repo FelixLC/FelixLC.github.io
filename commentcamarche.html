@@ -26,7 +26,11 @@
         <link rel="stylesheet" type="text/css" href="vendor/owl-carousel/owl.carousel.css" />
         <link rel="stylesheet" type="text/css" href="vendor/owl-carousel/owl.theme.css" />
         <link rel="stylesheet" type="text/css" href="assets/boilerPlateHTML5-0.0.1.css" />
-
+        <!-- start Mixpanel -->
+            <script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+                  for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+                  mixpanel.init("f6bd53dd567cdbc693bebdc18e1a4995");</script>
+            <!-- end Mixpanel -->
 </head>
 
 <body>
@@ -43,21 +47,21 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-             <a href="http://felixlc.github.io"><img alt="" src="assets/logos/LogoVinifyco.png" style="height:45px" id="mf2"/></a>
+             <a id="faq-to-home" href="http://felixlc.github.io"><img alt="" src="assets/logos/LogoVinifyco.png" style="height:45px" id="mf2"/></a>
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                  <a href="experience.html" class="btn-navbar-second">
+                  <a id="faq-experience" href="experience.html" class="btn-navbar-second">
                       L'expérience Vinibar
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="btn-navbar-second">
+<!--                   <a id="faq-experience" href="#" class="btn-navbar-second">
                       Comment ça marche&nbsp;?
-                  </a>
+                  </a> -->
                 </li>
 <!--                 <li class="dropdown">
                       <a class="btn-navbar-second dropdown-toggle" data-toggle="dropdown">
@@ -72,12 +76,12 @@
                 <li> -->
                 <li class="tooltip-enabled" data-toggle="tooltip" data-placement="bottom" title="prochainement">
                 <!-- LINK TBD -->
-                  <a href="" class="btn-navbar-second">
+                  <a id="faq-to-discover" href="" class="btn-navbar-second">
                       Offre Découverte
                   </a>
                 </li>
                 <li>
-                  <a href="http://app.vinify.co/static/commande/commande.html#/questionnaire/coffee" class="btn-navbar-second btn-primary">
+                  <a id="faq-navbar-start" href="http://app.vinify.co/static/commande/commande.html#/questionnaire/coffee" class="btn-navbar-second btn-primary">
                      Démarrer l'aventure
                   </a>
                 </li>
@@ -98,7 +102,7 @@
                   En alliant consommation spontanée et recommandation, le Vinibar permet de disposer de la bonne bouteille pour la bonne occasion, toujours à portée de main. Sans engagement, le Vinibar s’adapte à tous les budgets et à tous les rythmes de consommation.
                 </p>
                 <p class="know-cta-paragraph">
-                  <a class="btn btn-primary-outline btn-outline-blue" href="http://app.vinify.co/static/commande/commande.html#/questionnaire/coffee?product=v">Démarrer le questionnaire</a>
+                  <a id="faq-start-vinibar" href="http://app.vinify.co/static/commande/commande.html#/questionnaire/coffee?product=v" class="btn btn-primary-outline btn-outline-blue">Démarrer le questionnaire</a>
                 </p>
                 <h2 class="featurette-heading">L'Offre découverte</h2>
                 <p>
@@ -106,7 +110,7 @@
                 </p>
                 <p class="know-cta-paragraph">
                   <!-- LINK TBD -->
-                  <a  data-toggle="tooltip" data-placement="bottom" title="prochainement" class="btn btn-primary-outline btn-outline-blue">Découvrir Vinify</a>
+                  <a  id="faq-start-discover" href="" data-toggle="tooltip" data-placement="bottom" title="prochainement" class="btn btn-primary-outline btn-outline-blue">Découvrir Vinify</a>
                 </p>
                </div>
                <div class="col-lg-4 col-md-4 pull-right hidden-xs hidden-sm" id="vinify-tailleur">
@@ -181,7 +185,7 @@
                   <div class="acc-btn"><h1>Quels sont les délais de livraison&nbsp;?</h1></div>
                   <div class="acc-content">
                     <div class="acc-content-inner">
-                      <p>Nous sélectionnons vos bouteilles et nous les envoyons dans les 10 jours qui suivent votre achat. Si vous n'avez pas reçu votre colis sous 15 jours, merci de nous <a href="mailto:charlotte@vinify.co">contacter.</a></p>
+                      <p>Nous sélectionnons vos bouteilles et nous les envoyons dans les 10 jours qui suivent votre achat. Si vous n'avez pas reçu votre colis sous 15 jours, merci de nous <a class="faq-ask-charlotte" href="mailto:charlotte@vinify.co">contacter.</a></p>
                     </div>
                   </div>
 
@@ -213,14 +217,14 @@
                   <div class="acc-btn"><h1>Le paiement est-il sécurisé&nbsp;?</h1></div>
                   <div class="acc-content">
                     <div class="acc-content-inner">
-                      <p>Oui. <a href="http://stripe.com">Stripe</a>, notre partenaire de paiement leader en Europe et aux Etats-Unis est totalement sécurisé. Nous ne conservons pas vos coordonnées bancaires.</p>
+                      <p>Oui. <a id="faq-ask-stripe" href="http://stripe.com">Stripe</a>, notre partenaire de paiement leader en Europe et aux Etats-Unis est totalement sécurisé. Nous ne conservons pas vos coordonnées bancaires.</p>
                     </div>
                   </div>
 
                   <div class="acc-btn"><h1>Quels sont les différents moyens de paiement&nbsp;?</h1></div>
                   <div class="acc-content">
                     <div class="acc-content-inner">
-                      <p>Le paiement s'effectue par carte bancaire, à chaque commande. Merci de contacter <a href="mailto:charlotte@vinify.co">Charlotte</a> pour tout renseignement complémentaire.</p>
+                      <p>Le paiement s'effectue par carte bancaire, à chaque commande. Merci de contacter <a class="faq-ask-charlotte" href="mailto:charlotte@vinify.co">Charlotte</a> pour tout renseignement complémentaire.</p>
                     </div>
                   </div>
 
@@ -243,17 +247,10 @@
                     </div>
                   </div>
 
-                  <div class="acc-btn"><h1>Que faire si mon vin est bouchonné&nbsp;?</h1></div>
-                  <div class="acc-content">
-                    <div class="acc-content-inner">
-                      <p>Conservez le bouchon et renvoyez le nous, nous vous renverrons votre vin</p>
-                    </div>
-                  </div>
-
                   <div class="acc-btn"><h1>Qu'est-ce qu'un vin bouchonné&nbsp;?</h1></div>
                   <div class="acc-content">
                     <div class="acc-content-inner">
-                      <p>C'est un vin qui a un défaut, et dont l'odeur rappelle le liège, la poussière, le moisi. Elle est due à la présence de molécule de type haloanisole et halophénols dans l'environnement.</p>
+                      <p>C'est un vin qui a un défaut, et dont l'odeur rappelle le liège, la poussière, le moisi. Elle est due à la présence de molécule de type haloanisole et halophénols dans l'environnement. Nous portons une grande attention à la conservation des bouteilles, néanmoins, nous ne pouvons pas toutes les goûter ;). Si cela vous arrivait, conservez le bouchon et renvoyez le nous, nous vous renverrons un nouveau vin.</p>
                     </div>
                   </div>
 
@@ -326,7 +323,7 @@
                   <div class="acc-btn"><h1>En quoi consiste cet algorithme&nbsp;?</h1></div>
                   <div class="acc-content">
                     <div class="acc-content-inner">
-                      <p>L'algorithme repose sur une partie oenologique et une partie statistique. La partie oenologique décrit chaque vin sur plus d'une cinquantaine de critères pour pouvoir rapprocher les vins et les utilisateurs. La partie statistique rapproche les utilisateurs entre eux pour conseiller des vins appréciés par des profils similaires. Envie de parler d'espaces vectoriels avec nous&nbsp;? Contactez <a href="mailto:benjamin@vinify.co">Benjamin</a> :).</p>
+                      <p>L'algorithme repose sur une partie oenologique et une partie statistique. La partie oenologique décrit chaque vin sur plus d'une cinquantaine de critères pour pouvoir rapprocher les vins et les utilisateurs. La partie statistique rapproche les utilisateurs entre eux pour conseiller des vins appréciés par des profils similaires. Envie de parler d'espaces vectoriels avec nous&nbsp;? Contactez <a class="faq-ask-benjamin" href="mailto:benjamin@vinify.co">Benjamin</a> :).</p>
                     </div>
                   </div>
 
@@ -347,7 +344,7 @@
                   <div class="acc-btn"><h1 class="selected">Peut-on proposer des vins&nbsp;?</h1></div>
                   <div class="acc-content open">
                     <div class="acc-content-inner">
-                      <p>Bien sûr ! Envoyez un mail à <a href="charlotte@vinify.co">Charlotte</a> avec votre pépite et nous la goûterons sur le champ !</p>
+                      <p>Bien sûr ! Envoyez un mail à <a class="faq-ask-charlotte" href="charlotte@vinify.co">Charlotte</a> avec votre pépite et nous la goûterons sur le champ !</p>
                     </div>
                   </div>
 
@@ -373,7 +370,7 @@
                   <div class="acc-btn"><h1>Peut-on offrir plusieurs cadeaux (Entreprises)&nbsp;?</h1></div>
                   <div class="acc-content">
                     <div class="acc-content-inner">
-                      <p>Enive de faire plaisir à un client ? Le Vinibar est le moyen parfait de récompenser un client fidèle. Envoyez vos coordonnées à <a href="charlotte@vinify.co">Charlotte</a> et nous vous appelerons pour organiser votre commande.</p>
+                      <p>Enive de faire plaisir à un client ? Le Vinibar est le moyen parfait de récompenser un client fidèle. Envoyez vos coordonnées à <a class="faq-ask-charlotte" href="charlotte@vinify.co">Charlotte</a> et nous vous appelerons pour organiser votre commande.</p>
                     </div>
                   </div>
 
@@ -422,6 +419,25 @@
     $('.tooltip-enabled').tooltip();
 </script>
 
+<!-- Mixpanel -->
+<script type="text/javascript">
+
+        mixpanel.track_links("#faq-to-home" , 'Clicked on faq/to-home"');
+        mixpanel.track_links("#faq-experience" , 'Clicked on faq/experience"');
+        mixpanel.track_links("#faq-experience" , 'Clicked on faq/experience"');
+        mixpanel.track_links("#faq-to-discover" , 'Clicked on faq/to-discover"');
+        mixpanel.track_links("#faq-navbar-start" , 'Clicked on faq/navbar-start"');
+        mixpanel.track_links("#faq-start-vinibar" , 'Clicked on faq/start-vinibar"');
+        mixpanel.track_links("#faq-start-discover" , 'Clicked on faq/start-discover"');
+        mixpanel.track_links(".faq-ask-stripe" , 'Clicked on faq/ask-stripe"');
+        mixpanel.track_links(".faq-ask-charlotte" , 'Clicked on faq/ask-charlotte"');
+        mixpanel.track_links(".faq-ask-benjamin" , 'Clicked on faq/ask-benjamin"');
+        mixpanel.track_links("#home-social-mail", 'Clicked on home/social-mail');
+        mixpanel.track('page viewed', {
+            'page name' : 'faq',
+            'url' : window.location.pathname
+        });
+</script>
   <!-- SMOOTH SCROLLING -->
   <script>
     $(function() {
