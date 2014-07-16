@@ -5130,7 +5130,7 @@ body {
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .header-image {
-    background: url(img/background-vinibar.jpg) no-repeat center center;
+    background: url(img/background-tonio-carafe.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
