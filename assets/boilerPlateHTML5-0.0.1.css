@@ -1,3 +1,87 @@
+
+.slider {
+  margin-bottom: 40px; }
+
+.slider-vertical {
+  margin: 10px; }
+
+.slider {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 100%; }
+  .slider.slider-horizontal {
+    height: 30px; }
+    .slider.slider-horizontal .slider-track {
+      height: 6px;
+      width: 100%;
+      margin-top: -3px;
+      top: 50%;
+      left: 0; }
+    .slider.slider-horizontal .slider-selection {
+      height: 100%;
+      top: 0;
+      bottom: 0; }
+    .slider.slider-horizontal .slider-handle {
+      margin-left: -32px;
+      margin-top: -32px; }
+      .slider.slider-horizontal .slider-handle.triangle {
+        border-width: 0 10px 10px 10px;
+        width: 0;
+        height: 0;
+        border-bottom-color: #0480be;
+        margin-top: 0; }
+  .slider.slider-vertical {
+    height: 220px;
+    width: 30px; }
+    .slider.slider-vertical .slider-track {
+      width: 6px;
+      height: 100%;
+      margin-left: -3px;
+      left: 50%;
+      top: 0; }
+    .slider.slider-vertical .slider-selection {
+      width: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0; }
+    .slider.slider-vertical .slider-handle {
+      margin-left: -9px;
+      margin-top: -32px; }
+      .slider.slider-vertical .slider-handle.triangle {
+        border-width: 10px 0 10px 10px;
+        width: 1px;
+        height: 1px;
+        border-left-color: #0480be;
+        margin-left: 0; }
+  .slider input {
+    display: none; }
+  .slider .tooltip-inner {
+    white-space: nowrap; }
+
+.slider-track {
+  position: absolute;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 4px; }
+
+.slider-selection {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+  border-radius: 4px; }
+
+.slider-handle {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background: url(logos/bottles.svg) no-repeat center center;
+ }
+  .slider-handle.round {
+    border-radius: 24px; }
+  .slider-handle.triangle {
+    background: transparent none; }
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:800,400,300|Montserrat:700,400);
 /**
  * This is the main application stylesheet. It should include or import all
@@ -4883,6 +4967,10 @@ body {
     padding: 10px 5px;
   }
 }
+.navbar-fixed-top .navbar-collapse {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .navbar-toggle {
   border-color: #ebebeb;
 }
@@ -5035,9 +5123,9 @@ body {
 }
 .items {
   float: left;
-  -webkit-animation: scroll 42, 1750s infinite;
-  -moz-animation: scroll 42, 1750s infinite;
-  -ms-animation: scroll 42, 1750s infinite;
+  -webkit-animation: scroll 8s infinite;
+  -moz-animation: scroll 8s infinite;
+  -ms-animation: scroll 8s infinite;
   -webkit-animation-direction: alternate;
   /* Safari and Chrome */
   animation-direction: alternate;
