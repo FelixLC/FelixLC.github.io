@@ -5747,7 +5747,10 @@ footer {
   border-radius: 0;
 }
 #products {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+}
+#experiencevinibar {
+  margin-top: 40px;
 }
 #categories {
   text-align: center;
